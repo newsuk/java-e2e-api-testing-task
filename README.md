@@ -18,19 +18,24 @@ This task is designed to assess your ability to write and update automated API t
 ## Background:
 The endpoint featureDecisions accepts an array featureCodes. Previously, your colleague wrote a test verifying that when requesting all features, the returned list included an object with a code property set to `fp-1113`.
 
-## New Requirement:
+## Task 1: Assert specific feature's outcome
+
 You need to write a new automated test that:
 
 Sends a GraphQL query which requests only the object with `code = "fp-1113"` by passing this value in the featureCodes array.
 Verifies that the response includes an object code: "fp-1113" and its `outcomeAsBoolean` property is `false`.
 
-## Write the Test:
+### Help: Modify query:
 
 Modify the GraphQL query to:
 featureDecisions(featureCodes: ["fp-1113"]) { ... }
 Assert that the returned data contains only the required object, and that its `outcomeAsBoolean` property is equal to `false`.
 
-## Refactor the code
+## Task 2: Unauthorised
+
+You need to write a new automated test that UNAUTHORISED is returned with 400 status code when cookies are missing or invalid.
+
+## Task 3: Refactor the code
 
 If you think the code might be refactored to improve readability and re-usability please do so.
 
