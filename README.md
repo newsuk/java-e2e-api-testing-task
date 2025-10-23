@@ -49,6 +49,98 @@ __Endpoint:__
 https://join.thetimes.com/checkout/bootstrap?pc=ONS3001SZS7PB
 ```
 
+__Response:__
+```json
+{
+    "data": {
+        "postcodeAnywhere": {
+            "accountId": "INDIV62404",
+            "key": "AP21-JB73-CH52-UH45"
+        },
+        "promoCode": "ONS3001SZS7PB",
+        "tenant": "tnl",
+        "urls": {}
+    },
+    "propositions": {
+        "code": "MP1161",
+        "coolingOffDuration": 14,
+        "coolingOffUnit": "Days",
+        "countries": [
+            "GBR"
+        ],
+        "currencyCode": "GBP",
+        "groupAccountType": "Primary",
+        "hasATrialPeriod": true,
+        "isFree": false,
+        "isRegistration": false,
+        "monthlyCost": "30.00",
+        "monthlyTrialCost": "3",
+        "name": "Digital Pack - £1 for 3 Months",
+        "paymentInitialAmount": "1.00",
+        "paymentOngoingAmount": "30.00",
+        "paymentTerm": "Upfront then Monthly",
+        "paymentType": [
+            "DIRECT_DEBIT",
+            "CREDIT_CARD",
+            "PAYPAL"
+        ],
+        "serviceActivationType": "DIGI_IMMEDIATE",
+        "showOnboarding": true,
+        "onboardingSteps": [
+            "APPS",
+            "NEWSLETTERS",
+            "PUZZLES",
+            "TIMES_PLUS"
+        ],
+        "isStudentPack": false,
+        "verificationRequired": false,
+        "type": "DIGITAL",
+        "weeklyCost": "6.93",
+        "weeklySaving": "6.93",
+        "subscriptionSummary": {
+            "featureExclusionSummary": [],
+            "featureInclusionSummary": []
+        }
+    },
+    "content": {
+        "propositionPackImageUrlToPropositionCode": {
+            "/checkout/image/MP1161": [
+                "MP1161"
+            ]
+        }
+    },
+    "orderSummary": [
+        "Your first payment of £1.00 will be taken on 23rd October 2025. After 3 months, your payment method will be automatically charged £30.00 on the 23rd of every month thereafter, unless you cancel by contacting our Customer Services team 2 days before your next billing date. You are entitled to a full refund if you cancel within the first 14 days of your subscription."
+    ],
+    "orderSummaryDirectDebit": [
+        "Your first payment of £1.00 will be taken on 5th November 2025. After 3 months, your payment method will be automatically charged £30.00 on the 23rd of every month thereafter, unless you cancel by contacting our Customer Services team 2 days before your next billing date. You are entitled to a full refund if you cancel within the first 14 days of your subscription."
+    ],
+    "prePopulationValues": {
+        "firstName": null,
+        "lastName": null,
+        "email": null,
+        "primaryFirstName": null,
+        "primaryLastName": null
+    },
+    "customer": {
+        "email": null,
+        "displayName": null,
+        "firstName": null,
+        "lastName": null,
+        "dateOfBirth": null,
+        "title": null,
+        "phone": null,
+        "hasActiveSubscription": false,
+        "accountAgeLessThan30Seconds": false,
+        "checkoutType": "CHECKOUT",
+        "paymentMethodDetails": null,
+        "permissionState": null,
+        "subscriptions": null,
+        "permissions": null
+    }
+}
+```
+
 __Instructions:__
 
 Make a request to the endpoint. Assert that:
