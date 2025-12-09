@@ -6,7 +6,6 @@ metadata:
   annotations:
     circleci.com/project-slug: github/newsuk/java-e2e-api-testing-task
     backstage.io/source-location: url:https://github.com/newsuk/java-e2e-api-testing-task/
-    github.com/team-slug: newsuk/java-e2e-api-testing-task
     backstage.io/productivity-hub-metrics-enabled: 'true'
   tags:
     - bu:newsuk
