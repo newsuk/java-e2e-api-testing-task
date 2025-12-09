@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: java-e2e-api-testing-task
+  description: Component for java-e2e-api-testing-task
+  annotations:
+    circleci.com/project-slug: github/newsuk/java-e2e-api-testing-task
+    backstage.io/source-location: url:https://github.com/newsuk/java-e2e-api-testing-task/
+    backstage.io/productivity-hub-metrics-enabled: 'true'
+  tags:
+    - bu:newsuk
+spec:
+  type: service
+  lifecycle: production
+  owner: nuk
